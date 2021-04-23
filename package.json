@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "dev" : "./node_modules/.bin/webpack --watch"
+    "dev": "./node_modules/.bin/webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,24 @@
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "mini-css-extract-plugin": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
+    "postcss-loader": "^5.2.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.35.0",
     "webpack-cli": "^4.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "dependencies": {
+    "scss-reset": "^1.1.11"
   }
 }
