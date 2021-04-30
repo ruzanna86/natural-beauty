@@ -16,3 +16,29 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+
+a{
+  text-decoration: none;
+}
+
+.tag-list{
+  &_item{
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+}
+
+hr{
+  background: #e0e0e0;
+}
+
+.message-box{
+  margin-top: 42px;
+  background-color: rgb(244, 244, 244);
+  padding: 24px 28px;
+  p{
+    font-size: 22px;
+    max-width: 70%;
+  }
+}

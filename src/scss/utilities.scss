@@ -1,0 +1,43 @@
+.t-upp{
+  text-transform: uppercase;
+}
+
+.tc{
+  text-align: center;
+}
+
+.t-white{
+  color: $white;
+}
+
+.pr{
+  position: relative;
+}
+
+.pab{
+  position: absolute;
+}
+
+.underline-none{
+  text-decoration: none;
+}
+
+a{
+  transition: all .3s ease;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}

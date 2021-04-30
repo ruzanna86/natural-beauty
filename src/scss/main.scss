@@ -1,6 +1,9 @@
 @import '~scss-reset/_reset.scss';
 @import "variables";
+@import "mixins";
 @import "typography";
+@import "utilities";
 @import "global";
+@import "buttons";
 @import "hover";
 @import "single";

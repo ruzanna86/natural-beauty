@@ -1,7 +1,63 @@
 .single-post{
-  padding: 28px 0 50px;
+  padding: 28px 0 100px;
   &_date{
     margin: 18px 0;
     color: $dark;
+    font-size: 15px;
+  }
+  figcaption{
+    background-image: url("../images/rectangle.png");
+    @include bg-cover();
+    min-width: 128px;
+    padding: 7px 7px 9px;
+    font-size: 14px;
+    left: -12px;
+    top: 30px;
+    line-height: 1;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 0;
+      border-color: transparent #07906b transparent transparent;
+      left: 2px;
+      bottom: -7px;
+    }
+  }
+  figure{
+    margin: 25px 0;
+  }
+  blockquote{
+    margin: 39px 0 22px;
+    padding-left: 23px;
+    font-size: 18px;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 3px;
+      background-color: $purple;
+      height: 100%;
+      left: 0;
+    }
+  }
+}
+
+.category-list{
+  li{
+    a{
+      padding: 8px 16px;
+      background-color: $purple;
+      color: $white;
+      border: 1px solid transparent;
+      @media(min-width: 768px){
+        &:hover{
+          background-color: transparent;
+          border-color: $purple;
+          color: $purple;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,10 @@
+@mixin bg-cover($contain: false){
+  @if $contain {
+    background-size: contain;
+  }
+  @else {
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,9 @@
+@media (min-width: 768px){
+    .btn-purple{
+      transition: all .3s ease;
+      &:not(:disabled):hover{
+        background-color: transparent;
+        color: $purple;
+      }
+    }
+}
