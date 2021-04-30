@@ -633,6 +633,10 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 * {
   padding: 0;
   margin: 0;
@@ -691,7 +695,12 @@ a.default-btn {
     transition: all .3s ease; }
     .btn-purple:not(:disabled):hover {
       background-color: transparent;
-      color: #744897; } }
+      color: #744897; }
+  .btn-default {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    .btn-default:not(:disabled):hover {
+      background-image: linear-gradient(20deg, #f4f4f4 0%, #e0e0e0 100%); } }
 
 .single-post {
   padding: 28px 0 100px; }
