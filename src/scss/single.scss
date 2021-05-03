@@ -1,5 +1,4 @@
 .single-post{
-  padding: 28px 0 100px;
   &_date{
     margin: 18px 0;
     color: $dark;
@@ -14,6 +13,13 @@
     left: -12px;
     top: 30px;
     line-height: 1;
+    @media(max-width: 767.98px){
+      min-width: 110px;
+      padding: 6px 7px 8px;
+      font-size: 12px;
+      left: -10px;
+      top: 15px;
+    }
     &:after{
       content: "";
       position: absolute;
@@ -24,15 +30,23 @@
       border-color: transparent #07906b transparent transparent;
       left: 2px;
       bottom: -7px;
+      @media(max-width: 767.98px){
+        border-width: 0 8px 8px 0;
+        left: 2px;
+        bottom: -5px;
+      }
     }
   }
   figure{
     margin: 25px 0;
   }
   blockquote{
-    margin: 39px 0 22px;
+    margin: 22px 0 22px;
     padding-left: 23px;
     font-size: 18px;
+    @media(max-width: 767.98px){
+      font-size: 16px;
+    }
     &:before{
       content: "";
       position: absolute;
@@ -57,6 +71,25 @@
           border-color: $purple;
           color: $purple;
         }
+      }
+      @media(max-width: 767.98px){
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+.tag-list{
+  &_item{
+    margin-bottom: 17px;
+    @media(max-width: 767.98px){
+      margin-bottom: 14px;
+    }
+    &:not(:last-child){
+      margin-right: 10px;
+      @media(max-width: 767.98px){
+        margin-right: 7px;
       }
     }
   }
