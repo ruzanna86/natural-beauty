@@ -21,10 +21,7 @@
       top: 15px;
     }
     &:after{
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
+      @include pseudo(0,0);
       border-style: solid;
       border-width: 0 10px 10px 0;
       border-color: transparent #07906b transparent transparent;
@@ -48,11 +45,8 @@
       font-size: 16px;
     }
     &:before{
-      content: "";
-      position: absolute;
-      width: 3px;
+      @include pseudo(3px);
       background-color: $purple;
-      height: 100%;
       left: 0;
     }
   }

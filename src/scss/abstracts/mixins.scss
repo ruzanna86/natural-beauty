@@ -8,3 +8,28 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+  &::-ms-input-placeholder     {@content}
+  &::placeholder               {@content}
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin pseudo(
+  $width: 100%,
+  $height: 100%,
+  $pos: absolute,
+  $content: ""
+) {
+  content: $content;
+  position: $pos;
+  @include box($width, $height);
+}
